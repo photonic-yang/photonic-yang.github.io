@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e2f457367bc946c2a4fc4a48c8e58a1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-textpath@1.2.3/leaflet.textpath.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e2f457367bc946c2a4fc4a48c8e58a1c" ></div>
+        
+</body>
+<script>    
+    
+            var map_e2f457367bc946c2a4fc4a48c8e58a1c = L.map(
+                "map_e2f457367bc946c2a4fc4a48c8e58a1c",
+                {
+                    center: [36.035373, 103.850378],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: "False",
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eaea42ef13ef44fabbb2a142678e0db9 = L.tileLayer(
+                "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=8\u0026x={x}\u0026y={y}\u0026z={z}\u0026ltype=7",
+                {"attribution": "AutoNavi", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e2f457367bc946c2a4fc4a48c8e58a1c);
+        
+    
+            var circle_marker_3b8e514bbeab44af95c445a829b6e56d = L.circleMarker(
+                [30.234345, 120.437058],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e2f457367bc946c2a4fc4a48c8e58a1c);
+        
+    
+        var popup_65eec18ed5e0423bbb7f9ffbe32cafa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a2e94a318404c249cfdcb762ee6370e = $(`<div id="html_0a2e94a318404c249cfdcb762ee6370e" style="width: 100.0%; height: 100.0%;">杭州·萧山机场</div>`)[0];
+            popup_65eec18ed5e0423bbb7f9ffbe32cafa8.setContent(html_0a2e94a318404c249cfdcb762ee6370e);
+        
+
+        circle_marker_3b8e514bbeab44af95c445a829b6e56d.bindPopup(popup_65eec18ed5e0423bbb7f9ffbe32cafa8)
+        ;
+
+        
+    
+    
+            var circle_marker_29e13441bdfa41c28975db7a91f9222e = L.circleMarker(
+                [39.113447, 117.169884],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e2f457367bc946c2a4fc4a48c8e58a1c);
+        
+    
+        var popup_207eb30a8af8485e8dfa623f4106f8da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d23ec99b741e40898e9a54f55ad075a7 = $(`<div id="html_d23ec99b741e40898e9a54f55ad075a7" style="width: 100.0%; height: 100.0%;">天津·滨海机场</div>`)[0];
+            popup_207eb30a8af8485e8dfa623f4106f8da.setContent(html_d23ec99b741e40898e9a54f55ad075a7);
+        
+
+        circle_marker_29e13441bdfa41c28975db7a91f9222e.bindPopup(popup_207eb30a8af8485e8dfa623f4106f8da)
+        ;
+
+        
+    
+    
+            var poly_line_e02eafc597874bbdb50be85e37b616d7 = L.polyline(
+                [[30.234345, 120.437058], [30.283142092993828, 120.34415995515516], [30.333326262552873, 120.25200382597045], [30.384886231369283, 120.16061032162638], [30.437810412967863, 120.06999997992764], [30.492086914309677, 119.9801931626879], [30.547703538464607, 119.89121005115403], [30.604647787352246, 119.80307064147105], [30.662906864550443, 119.71579474018866], [30.7224676781709, 119.62940195981027], [30.78331684380115, 119.54391171438576], [30.845440687512284, 119.45934321514878], [30.90882524893174, 119.37571546619962], [30.97345628438046, 119.29304726023466], [31.039319270073687, 119.21135717432324], [31.10639940538475, 119.13066356573316], [31.17468161617102, 119.05098456780534], [31.24415055816137, 118.97233808587906], [31.314790620404285, 118.89474179326815], [31.386585928775958, 118.81821312728961], [31.459520349547482, 118.742769285345], [31.533577493010398, 118.66842722105598], [31.608740717159776, 118.59520364045443], [31.684993131433966, 118.52311499822837], [31.762317600510226, 118.45217749402421], [31.840696748155338, 118.38240706880646], [31.920112961130382, 118.31381940127547], [32.00054839314874, 118.24642990434411], [32.081984968886495, 118.18025372167429], [32.16440438804428, 118.11530572427381], [32.24778812945971, 118.0516005071546], [32.332117455269405, 117.989152386053], [32.417373415119755, 117.92797539421262], [32.5035368504254, 117.86808327923102], [32.59058839867452, 117.80948949997016], [32.67850849777995, 117.75220722353204], [32.767277390475144, 117.69624932229988], [32.85687512875399, 117.64162837104529], [32.947281578353504, 117.58835664410266], [33.03847642327836, 117.53644611261075], [33.13043917036627, 117.48590844182267], [33.223149153893196, 117.43675498848438], [33.31658554021727, 117.38899679828272], [33.41072733246055, 117.34264460336314], [33.50555337522739, 117.29770881991809], [33.60104235935843, 117.25419954584619], [33.69717282671917, 117.21212655848319], [33.793923175021995, 117.17149931240472], [33.89127166268064, 117.13232693730166], [33.98919641369589, 117.09461823592862], [34.08767542257154, 117.05838168212574], [34.186686559259435, 117.02362541891445], [34.28620757413247, 116.99035725666761], [34.386216102984534, 116.9585846713544], [34.486689672056144, 116.92831480286026], [34.587605703084705, 116.89955445338248], [34.68894151837825, 116.87231008590163], [34.79067434591158, 116.84658782272915], [34.89278132444351, 116.82239344413162], [34.99523950865423, 116.79973238703178], [35.098025874301555, 116.7786097437868], [35.20111732339487, 116.75903026104388], [35.304490689385695, 116.74099833867359], [35.40812274237362, 116.72451802878125], [35.51199019432651, 116.70959303479617], [35.61606970431373, 116.69622671063956], [35.72033788375132, 116.68442205997079], [35.82477130165778, 116.67418173551242], [35.92934648991954, 116.66550803845405], [36.03403994856454, 116.65840291793529], [36.138828151043256, 116.65286797060763], [36.24368754951544, 116.64890444027576], [36.34859458014181, 116.64651321761798], [36.45352566837924, 116.64569483998609], [36.55845723427844, 116.64644949128463], [36.663365697782766, 116.64877700192953], [36.76822748402711, 116.65267684888627], [36.8730190286356, 116.65814815578737], [36.97771678301697, 116.66518969312934], [37.08229721965634, 116.67379987854895], [37.18673683740227, 116.68397677717887], [37.29101216674795, 116.69571810208244], [37.39509977510517, 116.70902121476757], [37.49897627207012, 116.72388312577966], [37.60261831467958, 116.74030049537343], [37.70600261265657, 116.75826963426337], [37.80910593364405, 116.77778650445283], [37.91190510842572, 116.7988467201414], [38.01437703613251, 116.82144554871047], [38.11649868943381, 116.84557791178682], [38.21824711971213, 116.87123838638372], [38.31959946222006, 116.89842120611962], [38.420532941218426, 116.927120262514], [38.52102487509439, 116.95732910635996], [38.62105268145844, 116.98904094917359], [38.72059388221908, 117.02224866471938], [38.81962610863404, 117.0569447906117], [38.91812710633701, 117.09312152999159], [39.0160747403385, 117.13077075327905], [39.113447, 117.169884]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_e2f457367bc946c2a4fc4a48c8e58a1c);
+        
+    
+            poly_line_e02eafc597874bbdb50be85e37b616d7.setText(
+                "                        \u2708",
+                {"attributes": {"fill": "#007DEF", "font-size": "20", "font-weight": "bold"}, "below": false, "center": false, "offset": 7, "orientation": 0, "repeat": true}
+            );
+        
+    
+                var lat_lng_popup_7c5f26bd7b484e9ebc2e28bb273a07e7 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_7c5f26bd7b484e9ebc2e28bb273a07e7
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_e2f457367bc946c2a4fc4a48c8e58a1c);
+                    }
+                map_e2f457367bc946c2a4fc4a48c8e58a1c.on('click', latLngPop);
+            
+</script>
